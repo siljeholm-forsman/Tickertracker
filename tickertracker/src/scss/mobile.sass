@@ -1,0 +1,93 @@
+@import "_colors"
+
+$navbarHeight: 4em
+
+#mobileNav
+  height: $navbarHeight
+  position: fixed
+  bottom: 0
+  left: 0
+  width: 100vw
+  display: none
+  flex-direction: row
+  background-color: $background3
+  z-index: 10
+
+@media only screen and (max-width: 55em) 
+  body
+    #mobileNav
+      display: flex
+
+      >*
+        flex: 1
+        background-color: transparent
+        background-repeat: no-repeat
+        outline: none
+        overflow: hidden
+        border: none
+        display: flex
+        justify-content: center
+        align-items: center
+
+        >img
+          height: 50%
+          widows: 50%
+          object-fit: contain
+    
+    #stockdata
+      .datatable
+        justify-content: flex-start
+
+    #mainContentContainer 
+      margin-left: 0
+      margin-top: 0
+      margin-bottom: calc(4em + 60px)
+
+    #sidebarContainer
+      width: 0
+      padding: 0
+
+    #sidebar
+      padding: 0 10%
+  
+    #sidebarContainer[expanded="true"]
+      animation: expand 0.5s normal forwards
+
+    #sidebarContainer[expanded="false"]
+      animation: retract 0.5s normal forwards
+  
+    @keyframes expand
+      0%
+        width: 0
+      100%
+        width: 100vw
+
+    @keyframes retract
+      0%
+        width: 100vw
+      100%
+        width: 0
+
+
+    #login-button, #signup-button, #logout-button, #header #logo
+      display: none
+
+    #header 
+      top: auto
+      bottom: $navbarHeight
+
+      #logo
+        display: none
+
+    #header #searchbar
+      width: 80%
+
+
+    #searchResults
+      flex-direction: column-reverse
+      top: auto
+      bottom: 40px
+
+  
+  .sign
+    padding: 0 40px

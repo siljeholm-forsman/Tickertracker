@@ -1,0 +1,92 @@
+@import "_colors"
+
+#sidebarContainer
+  position: fixed
+  width: 350px
+  top: 0
+  bottom: 0
+  left: 0
+  color: $whitetext
+  background-color: $background2
+  padding: 70px 15px
+  z-index: 9
+  overflow: hidden auto
+
+#sidebar
+  min-width: 300px
+
+  a
+    color: inherit
+    text-decoration: inherit
+
+  #watchlist
+    h4
+      margin-bottom: 1em
+  
+  .bookmark
+    float: left
+    height: 1em
+    margin-right: 0.4em
+    position: relative
+    top: 0.3em
+  
+  #sidebar > div > span
+    min-width: 8em
+  
+  #trending, #watchlist
+    display: flex
+    flex-direction: column
+  
+  #trendingheader
+    margin: 1em 0
+
+    >*
+      display: inline
+      margin: 0
+    
+    .info-button
+      margin-left: 0.5em
+      vertical-align: middle
+
+  .title
+    >*
+      display: inline
+      margin: 0
+
+  .trendUp 
+    //color: #c296ba
+    //color: #ffffff
+    color: $whitetext
+
+    &::before
+      content: "▲ "
+
+  .trendDown
+    //color: #a04990
+    color: #7e7e7e
+
+    &::before
+      content: "▼ "
+
+  .priceDown
+    color: $red 
+
+  .priceUp
+    color: #6CCC57
+
+    &::before
+      content: "+"
+
+  .stockSidebar
+    padding: 5px 30px
+    overflow: hidden
+    min-width: 300px
+
+    .ticker
+      float: left
+      cursor: pointer
+
+    .trendChange, .priceChange
+      float: right
+      margin: 0 10px
+      width: 70px

@@ -1,0 +1,61 @@
+@import "_colors"
+
+.post
+  background-color: $background2
+  color: $whitetext
+
+  border-radius: 3px
+  text-align: left
+
+  padding: 10px 30px 30px 30px
+  margin: 10px 5px
+  overflow-x: hidden
+
+  .originalLink
+    text-decoration: inherit
+    font-size: 0.8em
+
+    &:hover
+      text-decoration: underline
+  
+    .infoSR
+      $col: $whitetext
+      color: $col
+      text-decoration-color: $col
+
+    .info
+      $col: #70778f
+      color: $col
+      text-decoration-color: $col
+  
+  img, video
+    max-width: 100%
+    max-height: 100%
+  
+  .inline-image
+    transition: transform 0.25s ease
+
+    &:hover
+      transform: scale(1.03)
+
+.videoContainer
+  position: relative
+  width: 100%
+  height: 0
+  padding-bottom: 56.25%
+
+.video
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+.postHeader
+  >*
+    display: inline
+  
+  .info-button
+    margin-left: 5px
+    margin-top: 5px
+    vertical-align: top

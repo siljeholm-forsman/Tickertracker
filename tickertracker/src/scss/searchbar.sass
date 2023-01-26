@@ -1,0 +1,98 @@
+@import "_colors"
+
+#header
+  position: fixed
+  z-index: 100
+  width: 100vw
+  height: 40px
+  top: 0
+  left: 0
+  background-color: $background3
+  padding: 10px 0
+
+  #logo
+    position: absolute
+    left: 2em
+    top: 50%
+    transform: translate(0, -50%)
+    height: 35px
+  
+  #searchbar
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+
+    border-radius: 5px
+    width: 30%
+
+    background-color: $background2
+    color: $whitetext
+  
+    #search-field
+      background-color: transparent
+      width: 100%
+      height: 100%
+      border: none
+      color: $whitetext
+      height: 35px
+
+      &::placeholder
+        opacity: 1
+        color: $blue1
+
+      &:focus
+        outline: none
+
+        +#searchResults
+          display: flex
+    
+    #searchResults
+      position: absolute
+      display: none
+      flex-direction: column
+      background-color: $background2
+      color: $blue1
+      width: 100%
+      
+      &:hover
+        display: flex
+      
+      .searchResult
+        padding: 0.25em 0
+        text-decoration: none
+
+        .symbol
+          color: gray
+  
+  #login-button, #signup-button, #account-button, #logout-button
+    position: absolute
+    cursor: pointer
+    top: 50%
+    transform: translate(0, -50%)
+    padding: 10px 26px
+    border: none
+    border-radius: 20px
+  
+  #login-button, #signup-button
+    border: none
+  
+  #login-button
+    color: $whitetext
+    background-color: $blue2
+    right: 2em
+
+  #signup-button
+    color: $blue2
+    background-color: $whitetext
+    right: 10em
+  
+  #account-button
+    color: $whitetext
+    border: $whitetext 1px solid
+    right: 2em
+
+  #logout-button
+    color: $whitetext
+    background-color: $red
+    right: 2em

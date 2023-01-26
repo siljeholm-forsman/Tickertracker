@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "axios": "^0.21.1",
+    "csv-parse": "^4.15.3",
+    "csv-parser": "^3.0.0",
+    "firebase-admin": "^9.5.0",
+    "google-auth-library": "^7.0.4",
+    "node-fetch": "^2.6.1",
+    "snoowrap": "^1.22.0"
+  }
+}

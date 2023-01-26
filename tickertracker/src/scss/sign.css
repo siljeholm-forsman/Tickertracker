@@ -1,0 +1,79 @@
+.popup-content .close {
+  position: absolute;
+  font-size: 50px;
+  right: 0.3em;
+  top: -0.2em;
+  cursor: pointer;
+  color: white;
+}
+
+.login-content {
+  width: 35em;
+  background-color: #212639;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.205);
+}
+
+.login-overlay {
+  background-color: rgba(0, 0, 0, 0.596);
+}
+
+.sign {
+  padding: 30px 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.sign > * {
+  margin: 15px 0;
+}
+.sign h2 {
+  color: #D4D4D4;
+  margin: 0.3em 0;
+}
+.sign input {
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  margin: 10px 0;
+  color: #D4D4D4;
+  border-bottom: white solid 1px;
+}
+.sign input:focus {
+  outline: none;
+}
+.sign button {
+  padding: 20px 30px;
+  font-size: 22px;
+  color: #D4D4D4;
+  background-color: #344CB4;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+}
+.sign a {
+  font-style: italic;
+}
+.sign .link {
+  cursor: pointer;
+}
+.sign .link:hover {
+  text-decoration: underline;
+}
+.sign .loading img {
+  width: 27px;
+  height: 27px;
+}
+.sign .remember {
+  width: auto;
+  margin-right: 5px;
+}
+.sign .buttonfield {
+  width: 100%;
+}
+
+/*# sourceMappingURL=sign.css.map */

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+#sidebarContainer {
+  position: fixed;
+  width: 350px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  color: #D4D4D4;
+  background-color: #212639;
+  padding: 70px 15px;
+  z-index: 9;
+  overflow: hidden auto;
+}
+
+#sidebar {
+  min-width: 300px;
+}
+#sidebar a {
+  color: inherit;
+  text-decoration: inherit;
+}
+#sidebar #watchlist h4 {
+  margin-bottom: 1em;
+}
+#sidebar .bookmark {
+  float: left;
+  height: 1em;
+  margin-right: 0.4em;
+  position: relative;
+  top: 0.3em;
+}
+#sidebar #sidebar > div > span {
+  min-width: 8em;
+}
+#sidebar #trending, #sidebar #watchlist {
+  display: flex;
+  flex-direction: column;
+}
+#sidebar #trendingheader {
+  margin: 1em 0;
+}
+#sidebar #trendingheader > * {
+  display: inline;
+  margin: 0;
+}
+#sidebar #trendingheader .info-button {
+  margin-left: 0.5em;
+  vertical-align: middle;
+}
+#sidebar .title > * {
+  display: inline;
+  margin: 0;
+}
+#sidebar .trendUp {
+  color: #D4D4D4;
+}
+#sidebar .trendUp::before {
+  content: "▲ ";
+}
+#sidebar .trendDown {
+  color: #7e7e7e;
+}
+#sidebar .trendDown::before {
+  content: "▼ ";
+}
+#sidebar .priceDown {
+  color: #E5443B;
+}
+#sidebar .priceUp {
+  color: #6CCC57;
+}
+#sidebar .priceUp::before {
+  content: "+";
+}
+#sidebar .stockSidebar {
+  padding: 5px 30px;
+  overflow: hidden;
+  min-width: 300px;
+}
+#sidebar .stockSidebar .ticker {
+  float: left;
+  cursor: pointer;
+}
+#sidebar .stockSidebar .trendChange, #sidebar .stockSidebar .priceChange {
+  float: right;
+  margin: 0 10px;
+  width: 70px;
+}
+
+/*# sourceMappingURL=sidebar.css.map */

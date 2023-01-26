@@ -1,0 +1,39 @@
+.logout-button {
+  color: #D4D4D4;
+  background-color: #344CB4;
+  border: none;
+  padding: 10px 26px;
+  margin: 40px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transform: translate(0, -50%);
+}
+
+.delete-button {
+  color: #344CB4;
+  background-color: #D4D4D4;
+  border: none;
+  padding: 10px 26px;
+  margin: 40px 0px;
+  border-radius: 20px;
+  cursor: pointer;
+  transform: translate(0, -50%);
+}
+
+#account input {
+  background-color: transparent;
+  color: inherit;
+  border: 0.5px solid white;
+  border-radius: 7px;
+  width: 70%;
+}
+#account input, #account .attr {
+  font-size: large;
+  padding: 10px;
+}
+#account .datatable .row {
+  width: 100%;
+  padding: 0.5em;
+}
+
+/*# sourceMappingURL=account.css.map */
