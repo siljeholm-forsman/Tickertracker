@@ -8,6 +8,6 @@ Reddit consists of multiple communities, called subreddits. The most popular fin
 
 Following the growth, forums such as these has received much attention and sentiment in the related posts have become an important indicator of stocks' performance. Tickertracker is used to gain an overview of financial posts and sentiment on Reddit. Our application allows users to follow certain stocks they are interested in, and automatically categorize and show relevant posts about these stocks. We also provide a trend score of different stocks, which is calculated based on submissions and posts across a few of the biggest financial subreddits. Furthermore, the application also provides information about stocks, such as the very popular metric "Short Percent of Float". The application also compiles posts about the stocks that a user is interested in, and shows all the relevant posts in their feed.
 
-Built by Anton Forsman and Ludvig Siljeholm, to be moved to shared organization Siljeholm-Forsman at soonest convenience
+Built by Anton Forsman and Ludvig Siljeholm
 
 The application is built as a web app and deployed at [https://tickertracker.nootna.com/](https://tickertracker.nootna.com/), and thus does not require any set up. 
